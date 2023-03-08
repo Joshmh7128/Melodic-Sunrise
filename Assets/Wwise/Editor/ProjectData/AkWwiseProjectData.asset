@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: dfcc8aee95edd547b523f8007c5f608f
     GuidInternal: 
-    m_lastTime: -8585233117226593290
-    List: []
+    m_lastTime: -8585233069195764735
+    List:
+    - name: MainBank
+      guid: da2a4d1ae3eb424bb7fcda40048cb956
+      id: 2880737896
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: dfcc8aee95edd547b523f8007c5f608f
+      - ElementName: MainBank
+        ObjectType: 7
+        guid: da2a4d1ae3eb424bb7fcda40048cb956
+      Path: SoundBanks\Default Work Unit\MainBank
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: de41d9f7b5c612459b80b0132228aa56
     GuidInternal: 
-    m_lastTime: -8585233117227394015
-    List: []
+    m_lastTime: -8585233037731310855
+    List:
+    - name: BeatEvent
+      guid: 0e194e4b96e5ea4ca3609e81787657b2
+      id: 3517968107
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: de41d9f7b5c612459b80b0132228aa56
+      - ElementName: BeatEvent
+        ObjectType: 3
+        guid: 0e194e4b96e5ea4ca3609e81787657b2
+      Path: Events\Default Work Unit\BeatEvent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Julian_Calor___BeauDamian___Flying_Nimbus__Monstercat_Release_
+      guid: c0f50f1b82f4a944833324d9c5989605
+      id: 1804134003
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: de41d9f7b5c612459b80b0132228aa56
+      - ElementName: Play_Julian_Calor___BeauDamian___Flying_Nimbus__Monstercat_Release_
+        ObjectType: 3
+        guid: c0f50f1b82f4a944833324d9c5989605
+      Path: Events\Default Work Unit\Play_Julian_Calor___BeauDamian___Flying_Nimbus__Monstercat_Release_
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -94,8 +142,50 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 4ff6c62fc170c24dbef8f7a45b33385b
     GuidInternal: 
-    m_lastTime: -8585233117226633329
-    List: []
+    m_lastTime: -8585233056816288178
+    List:
+    - name: Beat
+      guid: 0508046c3f87f14198059d6db1ca024f
+      id: 1190179409
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4ff6c62fc170c24dbef8f7a45b33385b
+      - ElementName: Beat
+        ObjectType: 13
+        guid: 0508046c3f87f14198059d6db1ca024f
+      Path: Game Parameters\Default Work Unit\Beat
+    - name: FireTrack001
+      guid: f58d72b30b4b3143898c4875285f040f
+      id: 3623326731
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4ff6c62fc170c24dbef8f7a45b33385b
+      - ElementName: FireTrack001
+        ObjectType: 13
+        guid: f58d72b30b4b3143898c4875285f040f
+      Path: Game Parameters\Default Work Unit\FireTrack001
+    - name: FireTrack002
+      guid: fe3fb96cef55fe48a82bb913a995ea31
+      id: 3623326728
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4ff6c62fc170c24dbef8f7a45b33385b
+      - ElementName: FireTrack002
+        ObjectType: 13
+        guid: fe3fb96cef55fe48a82bb913a995ea31
+      Path: Game Parameters\Default Work Unit\FireTrack002
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -136,10 +226,24 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 9263d1ab60e33f48a3d9d780a7fb4e9b
     GuidInternal: 
-    m_lastTime: -8585233117226192922
-    List: []
+    m_lastTime: -8585233037731260356
+    List:
+    - name: BeatTrigger
+      guid: 3f427fa325a7e54c89c62ae8eb86f16a
+      id: 3396185791
+      PathAndIcons:
+      - ElementName: Triggers
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9263d1ab60e33f48a3d9d780a7fb4e9b
+      - ElementName: BeatTrigger
+        ObjectType: 14
+        guid: 3f427fa325a7e54c89c62ae8eb86f16a
+      Path: Triggers\Default Work Unit\BeatTrigger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 01000000050000000600000007000000090000000a0000000c0000000d0000001200000013000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
