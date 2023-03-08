@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a56dc9db-080e-4bb6-999b-3befde88807e}">
+		<property name="assetPath">
+			<value>Julian Calor &amp; BeauDamian - Flying Nimbus [Monstercat Release].mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>173.184</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{325790b5-91fb-4177-a623-203b0caf9ceb}</destination>
+		</relationship>
+	</object>
+</objects>
