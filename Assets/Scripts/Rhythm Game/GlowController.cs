@@ -9,6 +9,10 @@ public class GlowController : DapperReceiver
 
     public float currentEmission, popEmit, reSpeed; // our multiplier of 
 
+    public enum moods { low, mid, high}
+
+    public moods mood;
+
     public static GlowController instance;
     private void Awake() => instance = this;
 
@@ -77,18 +81,21 @@ public class GlowController : DapperReceiver
         Debug.Log("running");
         reSpeed = 1f;
         popEmit = 0.5f;
+        mood = moods.low;
     }  
     
     public override void MidMood()
     {
         reSpeed = 2f;
         popEmit = 1f;
+        mood = moods.mid;
     }
 
     public override void HighMood()
     {
         reSpeed = 2f;
         popEmit = 5f;
+        mood = moods.high;
     }
 
 }

@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/FMOD Studio Project/RhythmGameProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638139134265485342
+  lastModified: 638139161786238552
   FileSizes:
   - Name: Desktop
-    Value: 5864576
+    Value: 5868576
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
   - {fileID: -1752380517418111933}
   StringsBanks:
   - {fileID: 4537376789053167990}
-  cacheTime: 638139134265505359
+  cacheTime: 638139161786268578
   cacheVersion: 131601
 --- !u!114 &2134431522870576998
 MonoBehaviour:
@@ -71,7 +71,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 214509
+  Length: 76342
 --- !u!114 &4537376789053167990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,7 +87,7 @@ MonoBehaviour:
   Path: Assets/FMOD Studio Project/RhythmGameProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638139134265505359
+  lastModified: 638139161786268578
   FileSizes:
   - Name: Desktop
     Value: 872

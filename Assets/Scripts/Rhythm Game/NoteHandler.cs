@@ -13,6 +13,20 @@ public class NoteHandler : DapperReceiver
         base.Start();
         StartCoroutine(Kill());
         target = transform.position + transform.forward * speed * Time.fixedDeltaTime;
+
+        // set speed
+        switch ((int)GlowController.instance.mood)
+        {
+            case 0:
+                speed = 75;
+                break;
+            case 1:
+                speed = 150;
+                break;
+            case 2:
+                speed = 225;
+                break;
+        }
     }
 
     private void Update()

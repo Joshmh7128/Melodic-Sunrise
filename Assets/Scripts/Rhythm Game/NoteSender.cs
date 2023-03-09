@@ -16,18 +16,19 @@ public class NoteSender : DapperReceiver
         GlowController.instance.renderers.Add(beat.transform.GetChild(0).gameObject.GetComponent<Renderer>());
     }
 
-    /*
+    
     public override void SendNoteL()
     {
-        if (lastLR)
-        {
-            Instantiate(note, leftSpawnRight.position, Quaternion.identity, null);
-            lastLR = true;
-        }
         if (!lastLR)
         {
-            Instantiate(note, leftSpawnLeft.position, Quaternion.identity, null);
+            Instantiate(note, leftSpawnRight);
+            Instantiate(note, rightSpawnRight);
+            lastLR = true;
+        } else if (lastLR)
+        {
+            Instantiate(note, leftSpawnLeft);
+            Instantiate(note, rightSpawnLeft);
             lastLR = false;
         }
-    }*/
+    }
 }
