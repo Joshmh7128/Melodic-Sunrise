@@ -94,7 +94,7 @@ public class FMODTimelineLink : MonoBehaviour
                         var parameter = (FMOD.Studio.TIMELINE_MARKER_PROPERTIES)Marshal.PtrToStructure(parameterPtr, typeof(FMOD.Studio.TIMELINE_MARKER_PROPERTIES));
                         timelineInfo.LastMarker = parameter.name;
                         // get the parameter name before a space
-                        string raw = (string)parameter.name; string name = null;
+                        string raw = (string)parameter.name; string name = parameter.name;
                         if (raw.Contains(' '))
                         {
                             int space = raw.IndexOf(' '); name = raw.Substring(0, space);

@@ -2,25 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NoteSender : MonoBehaviour
+public class NoteSender : DapperReceiver
 {
-    public GameObject note; // our note prefab
-    [SerializeField] Transform rightSpawnA, rightSpawnB;
-    [SerializeField] Transform leftSpawnA, leftSpawnB;
+    public GameObject note, beatObject; // our prefabs
+    [SerializeField] Transform rightSpawnRight, rightSpawnLeft, leftSpawnRight, leftSpawnLeft, topSpawnRight, topSpawnLeft, beatSpawn; // our beat spawns
 
-    bool lastLA, lastRA;
+    bool lastLR, lastRR;
 
-    public void SendNoteL()
+    public override void OnBeat()
     {
-        if (lastLA)
-        {
-            Instantiate(note, leftSpawnA.position, Quaternion.identity, null); 
-            lastLA = true;
-        }
-        if (!lastLA)
-        {
-            Instantiate(note, leftSpawnB.position, Quaternion.identity, null);
-            lastLA = false;
-        }
+        // spawn in a beat object
+        GameObject beat = Instantiate(beatObject, beatSpawn);
+        GlowController.instance.renderers.Add(beat.transform.GetChild(0).gameObject.GetComponent<Renderer>());
     }
+
+    /*
+    public override void SendNoteL()
+    {
+        if (lastLR)
+        {
+            Instantiate(note, leftSpawnRight.position, Quaternion.identity, null);
+            lastLR = true;
+        }
+        if (!lastLR)
+        {
+            Instantiate(note, leftSpawnLeft.position, Quaternion.identity, null);
+            lastLR = false;
+        }
+    }*/
 }

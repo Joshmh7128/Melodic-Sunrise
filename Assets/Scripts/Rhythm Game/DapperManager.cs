@@ -22,6 +22,7 @@ public class DapperManager : MonoBehaviour
     {
         foreach(DapperReceiver receiver in dapperReceivers)
         {
+            if (receiver != null)
             receiver.Invoke(function, 0);
         }
     }
