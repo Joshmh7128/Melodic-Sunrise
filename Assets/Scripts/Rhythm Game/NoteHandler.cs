@@ -21,10 +21,10 @@ public class NoteHandler : DapperReceiver
                 speed = 75;
                 break;
             case 1:
-                speed = 150;
+                speed = 100;
                 break;
             case 2:
-                speed = 225;
+                speed = 125;
                 break;
         }
     }

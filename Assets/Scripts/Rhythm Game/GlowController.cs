@@ -80,21 +80,21 @@ public class GlowController : DapperReceiver
     {
         Debug.Log("running");
         reSpeed = 1f;
-        popEmit = 0.5f;
+        popEmit = 1f;
         mood = moods.low;
     }  
     
     public override void MidMood()
     {
         reSpeed = 2f;
-        popEmit = 1f;
+        popEmit = 2f;
         mood = moods.mid;
     }
 
     public override void HighMood()
     {
         reSpeed = 2f;
-        popEmit = 5f;
+        popEmit = 3f;
         mood = moods.high;
     }
 
