@@ -49,15 +49,17 @@ public class NoteSender : DapperReceiver
     // sending a note right
     public override void SendNoteU()
     {
+        Debug.Log("Drop Top");
+
         if (!lastUR)
         {
             Instantiate(note, topSpawnRight);
-            lastLR = true;
+            lastUR = true;
         }
         else if (lastUR)
         {
             Instantiate(note, topSpawnLeft);
-            lastLR = false;
+            lastUR = false;
         }
     }
 }

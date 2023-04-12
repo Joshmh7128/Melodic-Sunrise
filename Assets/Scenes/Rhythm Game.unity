@@ -399,8 +399,8 @@ MonoBehaviour:
   rightSpawnLeft: {fileID: 1530357194}
   leftSpawnRight: {fileID: 1657478740}
   leftSpawnLeft: {fileID: 1438064449}
-  topSpawnRight: {fileID: 0}
-  topSpawnLeft: {fileID: 0}
+  topSpawnRight: {fileID: 1211423345}
+  topSpawnLeft: {fileID: 636999440}
   beatSpawn: {fileID: 1185902308}
 --- !u!1 &415323899
 GameObject:
