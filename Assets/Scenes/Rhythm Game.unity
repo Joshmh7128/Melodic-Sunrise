@@ -302,14 +302,14 @@ MonoBehaviour:
   LeftRight: {fileID: 767603947}
   RightLeft: {fileID: 814662629}
   RightRight: {fileID: 2002506957}
-  TopLeft: {fileID: 0}
-  TopRight: {fileID: 0}
+  TopLeft: {fileID: 26038301}
+  TopRight: {fileID: 415323900}
   PlayerLeft: {fileID: 679237387}
   PlayerRight: {fileID: 1277991047}
-  PlayerTop: {fileID: 0}
+  PlayerTop: {fileID: 71472047}
   LeftTarget: {x: 0, y: 0, z: 0}
   RightTarget: {x: 0, y: 0, z: 0}
-  TopTarget: {x: 0, y: 0, z: 0}
+  TopTarget: {x: -2, y: 6, z: 0}
   moveSpeed: 5
 --- !u!1 &169216271
 GameObject:
@@ -426,7 +426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415323899}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: 1, z: 0}
+  m_LocalPosition: {x: 4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1624,11 +1624,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventName:
     Guid:
-      Data1: 332832577
-      Data2: 1193152409
-      Data3: 527957408
-      Data4: 1906083330
-    Path: event:/Tendencies - Heart
+      Data1: -1748028819
+      Data2: 1267396088
+      Data3: 1514917264
+      Data4: 1432296348
+    Path: event:/Tendencies - Heart Master
 --- !u!1 &1530357193
 GameObject:
   m_ObjectHideFlags: 0

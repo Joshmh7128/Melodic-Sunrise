@@ -7,7 +7,7 @@ public class NoteSender : DapperReceiver
     public GameObject note, beatObject; // our prefabs
     [SerializeField] Transform rightSpawnRight, rightSpawnLeft, leftSpawnRight, leftSpawnLeft, topSpawnRight, topSpawnLeft, beatSpawn; // our beat spawns
 
-    bool lastLR, lastRR;
+    bool lastLR, lastRR, lastUR;
 
     public override void OnBeat()
     {
@@ -17,17 +17,46 @@ public class NoteSender : DapperReceiver
     }
 
     
+    // sending a note left
     public override void SendNoteL()
     {
         if (!lastLR)
         {
             Instantiate(note, leftSpawnRight);
-            Instantiate(note, rightSpawnRight);
             lastLR = true;
         } else if (lastLR)
         {
             Instantiate(note, leftSpawnLeft);
+            lastLR = false;
+        }
+    }
+
+    // sending a note right
+    public override void SendNoteR()
+    {
+        if (!lastRR)
+        {
+            Instantiate(note, rightSpawnRight);
+            lastRR = true;
+        }
+        else if (lastRR)
+        {
             Instantiate(note, rightSpawnLeft);
+            lastRR = false;
+        }
+    }
+
+    // sending a note right
+    public override void SendNoteU()
+    {
+        if (!lastUR)
+        {
+            Instantiate(note, topSpawnRight);
+            lastLR = true;
+        }
+        else if (lastUR)
+        {
+            Instantiate(note, topSpawnLeft);
             lastLR = false;
         }
     }

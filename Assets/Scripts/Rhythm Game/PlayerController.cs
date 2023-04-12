@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform PlayerLeft, PlayerRight, PlayerTop; // the transforms we are moving
     [SerializeField] Vector3 LeftTarget, RightTarget, TopTarget; // where we want to move
     [SerializeField] float moveSpeed; // the speed that the player can move at
-    bool LLR, LRR, LTR; // what was our last position?
 
     private void Start()
     {
@@ -44,54 +43,66 @@ public class PlayerController : MonoBehaviour
 
     void ProcessInput()
     {
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
-            MoveLeft();
+        if (Input.GetKeyDown(KeyCode.A))
+            MoveLeft(false);
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
-            MoveRight();
+        if (Input.GetKeyDown(KeyCode.D))
+            MoveLeft(true);
 
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
-            MoveUp();
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+            MoveRight(true);
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+            MoveRight(false);
+
+        if (Input.GetKeyDown(KeyCode.W))
+            MoveUp(false);
+
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+            MoveUp(true);
        
     }
 
-    void MoveLeft()
+    void MoveLeft(bool moveRight)
     {
         // if last move was right
-        if (LLR)
+        if (!moveRight)
         {
             LeftTarget = LeftLeft.position;
-            LLR = false;
-        } else if (!LLR)
+        } else if (moveRight)
         {
             LeftTarget = LeftRight.position;
-            LLR = true;
         }
     }
 
-    void MoveRight()
+    void MoveRight(bool moveRight)
     {
         // if last move was right
-        if (LRR)
+        if (!moveRight)
         {
             RightTarget = RightLeft.position;
-            LRR = false;
         }
-        else if (!LRR)
+        else if (moveRight)
         {
             RightTarget = RightRight.position;
-            LRR = true;
         }
     }
 
-    void MoveUp()
+    void MoveUp(bool moveRight)
     {
-
+        if (!moveRight)
+        {
+            TopTarget = TopLeft.position;
+        } else if (moveRight)
+        {
+            TopTarget = TopRight.position;
+        }
     }
 
     void ProcessPosition()
     {
         PlayerLeft.position = Vector3.Lerp(PlayerLeft.position, LeftTarget, moveSpeed * Time.fixedDeltaTime);
         PlayerRight.position = Vector3.Lerp(PlayerRight.position, RightTarget, moveSpeed * Time.fixedDeltaTime);
+        PlayerTop.position = Vector3.Lerp(PlayerTop.position, TopTarget, moveSpeed * Time.fixedDeltaTime);
     }
 }

@@ -1,5 +1,59 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8783187501038883566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tendencies - Heart Master
+  m_EditorClassIdentifier: 
+  Path: event:/Tendencies - Heart Master
+  Guid:
+    Data1: -1748028819
+    Data2: 1267396088
+    Data3: 1514917264
+    Data4: 1432296348
+  Banks:
+  - {fileID: -1752380517418111933}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 76342
+--- !u!114 &-5754420684033358901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tendencies - Heart Beat
+  m_EditorClassIdentifier: 
+  Path: event:/Tendencies - Heart Beat
+  Guid:
+    Data1: 332832577
+    Data2: 1193152409
+    Data3: 527957408
+    Data4: 1906083330
+  Banks:
+  - {fileID: -1752380517418111933}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 76342
 --- !u!114 &-1752380517418111933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,10 +69,10 @@ MonoBehaviour:
   Path: Assets/FMOD Studio Project/RhythmGameProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638139161786238552
+  lastModified: 638169029010528114
   FileSizes:
   - Name: Desktop
-    Value: 5868576
+    Value: 5879232
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -36,42 +90,17 @@ MonoBehaviour:
   - {fileID: 4537376789053167990}
   - {fileID: -1752380517418111933}
   EditorEvents:
-  - {fileID: 2134431522870576998}
   - {fileID: 6620903286435834575}
+  - {fileID: 8278062749993922393}
+  - {fileID: -5754420684033358901}
+  - {fileID: -8783187501038883566}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1752380517418111933}
   StringsBanks:
   - {fileID: 4537376789053167990}
-  cacheTime: 638139161786268578
+  cacheTime: 638169029010548132
   cacheVersion: 131601
---- !u!114 &2134431522870576998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Tendencies - Heart
-  m_EditorClassIdentifier: 
-  Path: event:/Tendencies - Heart
-  Guid:
-    Data1: 332832577
-    Data2: 1193152409
-    Data3: 527957408
-    Data4: 1906083330
-  Banks:
-  - {fileID: -1752380517418111933}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 76342
 --- !u!114 &4537376789053167990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,10 +116,10 @@ MonoBehaviour:
   Path: Assets/FMOD Studio Project/RhythmGameProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638139161786268578
+  lastModified: 638169029010548132
   FileSizes:
   - Name: Desktop
-    Value: 872
+    Value: 964
   Exists: 1
 --- !u!114 &6620903286435834575
 MonoBehaviour:
@@ -119,3 +148,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 172271
+--- !u!114 &8278062749993922393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tendencies - Heart Vocals
+  m_EditorClassIdentifier: 
+  Path: event:/Tendencies - Heart Vocals
+  Guid:
+    Data1: 1018536232
+    Data2: 1087904685
+    Data3: -13379159
+    Data4: 417058459
+  Banks:
+  - {fileID: -1752380517418111933}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 76342

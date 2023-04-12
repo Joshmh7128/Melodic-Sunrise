@@ -22,6 +22,8 @@ public abstract class DapperReceiver : MonoBehaviour
 
     // our notes
     public virtual void SendNoteL() { } // when we call note L
+    public virtual void SendNoteR() { } // when we call note R
+    public virtual void SendNoteU() { } // when we call note U
 
 
 }
